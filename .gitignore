@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -20,10 +21,9 @@ wheels/
 .installed.cfg
 *.egg
 
-# PyTorch
-data/
-*.pth
-*.pt
+# Virtual Environment
+venv/
+ENV/
 
 # IDE
 .idea/
@@ -31,13 +31,9 @@ data/
 *.swp
 *.swo
 
-# 环境
-.env
-.venv
-env/
-venv/
-ENV/
-
-# 系统文件
-.DS_Store
-Thumbs.db 
+# Project specific
+data/
+*.pth
+*.pt
+*.ckpt
+*.log 
