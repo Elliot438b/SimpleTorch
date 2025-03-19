@@ -36,4 +36,7 @@ data/
 *.pth
 *.pt
 *.ckpt
-*.log 
+*.log
+
+# Local notes
+note.md 
