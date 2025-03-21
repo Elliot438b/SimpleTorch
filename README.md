@@ -35,14 +35,14 @@ The CNN model consists of:
 - Conv2: 16->32 channels, 3x3 kernel
 - FC1: 32*8*8 -> 10 classes
 
-## 数据集的选择与加载
+## Dataset and Data Loading
 
-### CIFAR-10 数据集概述
-- 数据集大小：50,000 张图片
-- 图片大小：3x32x32（RGB图像）
-- 类别数：10个（飞机、汽车、鸟、猫、鹿、狗、青蛙、马、船、卡车）
+### CIFAR-10 Dataset Overview
+- Dataset size: 50,000 images
+- Image size: 3x32x32 (RGB images)
+- Classes: 10 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck)
 
-### 数据预处理
+### Data Preprocessing
 ```python
 transform = transforms.Compose([
     transforms.ToTensor(),
@@ -50,14 +50,14 @@ transform = transforms.Compose([
 ])
 ```
 
-### 数据集可视化
-运行以下命令查看数据集样本和分布：
+### Dataset Visualization
+Run the following command to view dataset samples and distribution:
 ```bash
 python show_dataset.py
 ```
-这将生成两个可视化文件：
-- `cifar10_samples.png`：数据集样本图片
-- `class_distribution.png`：类别分布
+This will generate two visualization files:
+- `cifar10_samples.png`: Sample images from the dataset
+- `class_distribution.png`: Class distribution visualization
 
 ## Usage
 
@@ -77,4 +77,16 @@ python main.py
 - PyTorch 2.6.0
 - torchvision
 - numpy
-- matplotlib 
+- matplotlib
+
+## Future Improvements
+
+1. Add validation set evaluation
+2. Implement model checkpointing
+3. Add training visualization
+4. Optimize training strategies
+5. Add test set evaluation
+
+## License
+
+MIT License 
